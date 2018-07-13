@@ -1,11 +1,13 @@
-const express = require('express');
-const app = express();
-
 // PAYLOADS
 const fs = require('fs');
 const oobXXE = fs.readFileSync('./payloads/liferayDomXSS.xml').toString('utf-8');
 const liferay = fs.readFileSync('./payloads/liferayDomXSS.xml').toString('utf-8');
 
+
+// SERVER
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 3000
 
 var arr = [];
 
@@ -34,4 +36,4 @@ app.options('*', (req, res, next) => {
 	res.send(200);
 });
 
-app.listen(process.env.PORT || 3000, () => console.log('Example app listening on port 3000!'));
+app.listen(PORT, () => console.log('Example app listening for HTTPS on port ' + PORT + '!'))
