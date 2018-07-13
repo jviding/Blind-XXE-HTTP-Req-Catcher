@@ -2,7 +2,7 @@
 	<CurrentFolder path="" url="" />
 	<Folders>
 		<Folder name="&quot;&gt;
-			&lt;iframe src=&quot;javascript:alert(document.domain)&quot;&gt;
+			&lt;iframe src=&quot;javascript:alert('You\'ve been XSS\'d!')&quot;&gt;
 			&lt;/iframe&gt;" />
 	</Folders>
 </Connector>
